@@ -9,6 +9,7 @@ fun main() {
 
     a = 20
     b = 35
+    c = a+b
 
     println(" a = "+ a +" b = "+ b + " a + b = " + c )
 }
