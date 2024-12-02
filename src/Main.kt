@@ -58,5 +58,5 @@ fun main() {
             println("no has ingresado un día válido")
         }
     }
-    sout
+
 }
