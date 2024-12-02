@@ -59,4 +59,29 @@ fun main() {
         }
     }
 
+//Condicionales
+
+//== Comparar si dado dos argumentos son iguales. true/false
+//&& Compara si dados dos condiciones, que ambas se cumplan. true/false
+|| Compara si dadas dos o más condiciones, al menos 1 de cumpla. true/false
+//< . true/false
+//> . true/false
+//<= .....
+//>= .....
+//*/
+
+    var valueA = 2
+    var valueB = 7
+    if (valueA == 2 || valueB == 3) {
+// Si se cumple, procede a la lógica
+        if (valueB == 3) {
+//Haz esto...
+        } else {
+//Sino aquello...
+        }
+    } else {
+//Sino se cumple el argumento...
+// Procede aqui.
+    }
+
 }
