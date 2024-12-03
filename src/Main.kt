@@ -32,19 +32,19 @@ fun main() {
     for(i in 0..5 step 2) {
         println("value for i: " + i)
     }
-    var valueA = 3
-    val valueB = 5
-    while (valueA < valueB) {
-        valueA++
-        valueA.inc()
-        valueA = valueA + 1
-        valueA += 1
+    var valueAA = 3
+    val valueBB : Int = 5
+    while (valueAA < valueBB) {
+        valueAA++
+        valueAA.inc()
+        valueAA = valueAA + 1
+        valueAA += 1
         println("Hola")
     }
 
     do {
-        valueA++
-    } while (valueA < valueB)
+        valueAA++
+    } while (valueAA < valueBB)
 
     //3.When (Cases)
     val day = 5
@@ -63,7 +63,7 @@ fun main() {
 
 //== Comparar si dado dos argumentos son iguales. true/false
 //&& Compara si dados dos condiciones, que ambas se cumplan. true/false
-|| Compara si dadas dos o más condiciones, al menos 1 de cumpla. true/false
+// Compara si dadas dos o más condiciones, al menos 1 de cumpla. true/false
 //< . true/false
 //> . true/false
 //<= .....
