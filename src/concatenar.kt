@@ -6,5 +6,6 @@ fun main() {
     cadena2= readlnOrNull().toString()
 
     println(cadena1+cadena2)
+    /* println("$cadena1 $cadena2") */
 
 }
