@@ -64,9 +64,10 @@ fun titulo(i: Int): String {
     return "error en indice de titulo"
 }
 
-fun proceder(j: Int):Int? {
+fun proceder(j: Int):Int {
     val indice = j
     when (indice) {
+        1 ->  EjerciciosArrays.Ejercicio1.proceder()
 
     }
     println("\n\n Escribe algo para otro ejercicio o 1 si quieres salir\n")
