@@ -4,11 +4,12 @@ package Utils
 class Utiles {
 
     fun  crearStringArray(input: String?, delimiter: String = ","): Array<String>? {
-        return input?.split(delimiter)?.map { it.trim() }?.toTypedArray()
+        return input?.split(delimiter)?.map { it.replace("\\s+", "" )}?.toTypedArray()
     }
-    
-    fun  crearIntArray(input: String?, delimiter: String = ","): Array<Int>? {
-        return input?.split(delimiter)?.map { it.trim().toInt() }?.toTypedArray()
+
+    fun  crearIntArray(input: String, delimiter: String = ","): Array<Int> {
+        val inputNew =input.split(delimiter).map { it.replace("\\s+", "")}.map { it.toInt() }.toTypedArray()
+        return inputNew
     }
 
 //    fun construirArray(input: String?, delimiter: String = ","): Array<T> {
