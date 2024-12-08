@@ -3,7 +3,7 @@ package Utils
 
 class Utiles {
 
-    fun crearStringArray(input: String, delimiter: String = ","): Array<String>{
+    fun crearStringArray(input: String, delimiter: String = ","): Array<String> {
         return input.split(delimiter).map { it.replace("\\s+".toRegex(), "") }.toTypedArray()
     }
 
@@ -48,7 +48,7 @@ class Utiles {
             3 -> EjerciciosArrays.Ejercicio3.proceder()
             4 -> EjerciciosArrays.Ejercicio4.proceder()
             5 -> EjerciciosArrays.Ejercicio5.proceder()
-//            6 -> EjerciciosArrays.Ejercicio6.proceder()
+            6 -> EjerciciosArrays.Ejercicio6.proceder()
 
         }
         println("\n\n Escribe algo para otro ejercicio o 1 si quieres salir\n")
