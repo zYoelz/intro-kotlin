@@ -46,7 +46,7 @@ class Utiles {
             1 -> EjerciciosArrays.Ejercicio1.proceder()
             2 -> EjerciciosArrays.Ejercicio2.proceder()
             3 -> EjerciciosArrays.Ejercicio3.proceder()
-//            4 -> EjerciciosArrays.Ejercicio4.proceder()
+            4 -> EjerciciosArrays.Ejercicio4.proceder()
 //            5 -> EjerciciosArrays.Ejercicio5.proceder()
 //            6 -> EjerciciosArrays.Ejercicio6.proceder()
 
