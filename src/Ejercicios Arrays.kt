@@ -21,7 +21,7 @@ fun main() {
                             "Su enunciado es:\n${utiles.titulo(j)}\n\n" +
                             "---------------- Procedamos -----------------\n\n"
                 )
-                i = proceder(j)
+                i =utiles.proceder(j)
 
             } else {
                 println("Adios")
@@ -67,24 +67,7 @@ fun main() {
 //    return "error en indice de titulo"
 //}
 
-fun proceder(j: Int): Int {
-    val indice = j
-    when (indice) {
-        1 -> EjerciciosArrays.Ejercicio1.proceder()
 
-    }
-    println("\n\n Escribe algo para otro ejercicio o 1 si quieres salir\n")
-    val decision = readLine()?.toInt()
-    var salida: Int
-    if (decision != 1) {
-        salida = 1
-    } else {
-        salida = 0
-    }
-
-    return salida
-
-}
 
 
 

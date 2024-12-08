@@ -2,7 +2,7 @@ package EjerciciosArrays
 
 import Utils.Utiles
 
-val utiles = Utiles()
+val utiles1 = Utiles()
 
 
 object Ejercicio1 {
@@ -15,7 +15,7 @@ object Ejercicio1 {
         println("Primero escribe la cadena de numeros separado por comas")
         val numbersArray = readlnOrNull()?:""
         if (numbersArray.isEmpty()) throw Exception("Cadena Vacia") // Manda un error pero termina el programa, es poco interesante1
-        val numbersArrayInt = utiles.crearIntArray(numbersArray)
+        val numbersArrayInt = utiles1.crearIntArray(numbersArray)
 
         println("La cadena es ${numbersArrayInt.contentToString()}\nAhora escribe la posicion ")
         val indice = readlnOrNull()?.toInt() ?: -1

@@ -39,5 +39,28 @@ class Utiles {
         }
         return "error en indice de titulo"
     }
+    fun proceder(j: Int): Int {
+        val indice = j
+        when (indice) {
+            1 -> EjerciciosArrays.Ejercicio1.proceder()
+            2 -> EjerciciosArrays.Ejercicio2.proceder()
+//            3 -> EjerciciosArrays.Ejercicio3.proceder()
+//            4 -> EjerciciosArrays.Ejercicio4.proceder()
+//            5 -> EjerciciosArrays.Ejercicio5.proceder()
+//            6 -> EjerciciosArrays.Ejercicio6.proceder()
+
+        }
+        println("\n\n Escribe algo para otro ejercicio o 1 si quieres salir\n")
+        val decision = readLine()?.toInt()
+        var salida: Int
+        if (decision != 1) {
+            salida = 1
+        } else {
+            salida = 0
+        }
+
+        return salida
+
+    }
 }
 
