@@ -20,9 +20,11 @@ object Ejercicio2 {
         if (numero == null) throw Exception("Numero no valido")
         println("El numero a buscar es $numero")
 
-        val contar = numbersArrayInt.count { it == numero }
-
-        println("La cadena dada tiene $contar veces el numero $numero")
+        if(numbersArrayInt.contains(numero)) {
+            println("La cadena contiene el numero $numero")
+        }else{
+            println("La cadena no contiene el numero $numero")
+        }
 
 
     }
