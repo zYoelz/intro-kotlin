@@ -1,6 +1,6 @@
 fun main() {
-    var a : Float = 1f
-    var b : Float = 5f
+    var a = 1f
+    var b = 5f
     var c : Float = a*b
 
     println(" a =" + a +"b = "+ b + "a x b = " + c)
