@@ -17,7 +17,6 @@ class Utiles {
 //    }
 
     fun menu(tipo: String): Int? {
-
         println(tipo)
         for (k in 1..6) {
             val t = k
@@ -52,9 +51,9 @@ class Utiles {
 
         }
         println("\n\n Escribe algo para otro ejercicio o 1 si quieres salir\n")
-        val decision = readLine()?.toInt()
+        val decision = readLine()
         var salida: Int
-        if (decision != 1) {
+        if (decision != "1") {
             salida = 1
         } else {
             salida = 0
