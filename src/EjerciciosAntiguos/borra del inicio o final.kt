@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     println("hola en este programa vamos a eliminar un caracter determinado si esta al principio o al final de una cadena")
     println("Teclea la cadena de caracteres")

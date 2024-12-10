@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
 
     println("Escribe el primer numero")

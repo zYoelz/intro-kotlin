@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     println("Este ejercicio es para unir 2 cadenas \nPara ello vamos a escribir la primera cadena darle a Enter y escribir la segunda")
     var cadena1 : String=""

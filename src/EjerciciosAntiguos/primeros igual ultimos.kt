@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     println(
         "en una cadena dada vamos a comprovar si los 2 primeros caracteres son iguales a los 2 ultimos\n" +

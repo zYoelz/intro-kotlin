@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     var a = 1f
     var b = 5f

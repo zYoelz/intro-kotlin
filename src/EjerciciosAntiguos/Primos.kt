@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     //vamos a calcular los primeros x primos
     //primero vamos a pedir el numero de primos que se quiere determinar

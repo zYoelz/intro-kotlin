@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     println("Escriba una frase y luego elija que letras intercambiar\nAhora estriva la cadena")
     var cadena: String = readLine().toString()

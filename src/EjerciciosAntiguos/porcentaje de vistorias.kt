@@ -1,8 +1,10 @@
+package EjerciciosAntiguos
+
 import java.io.File
 
 
 fun main() {
-    val pathName = "src/datos-partidos"
+    val pathName = "src/EjerciciosAntiguos/datos-partidos"
     val miArchivo = File(pathName)
     val contenido = miArchivo.readText()
 

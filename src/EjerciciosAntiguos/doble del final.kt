@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main(){
     println("Vamos a escribir por pantalla dos veces las dos ultimas letras de una cadena dada por pantalla\n" +
             "Primero escribe la cadena")

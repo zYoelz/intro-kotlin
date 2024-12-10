@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     var a : Int = 7
     var b : Int = 5

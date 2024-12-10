@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     val alto: Float
     val largo: Float

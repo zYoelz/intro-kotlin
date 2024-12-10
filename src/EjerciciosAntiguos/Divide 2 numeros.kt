@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main() {
     var a : Double = 10.0
     var b : Double = 5.0

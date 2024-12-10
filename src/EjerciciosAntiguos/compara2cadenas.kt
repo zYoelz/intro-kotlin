@@ -1,3 +1,5 @@
+package EjerciciosAntiguos
+
 fun main(){
     println("vamos a comparar dos cadenas daadas y ver si son iguales o no sin tener en cuenta las mayusculas\n" +
             "Primero escriba las cadenas separadas por un enter")
