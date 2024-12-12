@@ -8,11 +8,19 @@ class Clase(
 
 ) : ClassInterface {
     override fun addAlumno(alumno: Alumno) {
-        alumnos.add(Alumno)
-        numeroDeAlumnos()
+        alumnos.add(alumno)
+        println("Número de alumnos: ${numeroDeAlumnos()}")
+
+    }
+    override fun numeroDeAlumnos() {
+        return
     }
 
-    companion object
+    override fun toString(): String {
+        return "Clase(id=$id, name='$name', alumnos=$alumnos)"
+    }
+
+
 }
 
 
@@ -22,9 +30,12 @@ class Alumno(
     var edad: Int
 ) : AlumnoInterface {
     override fun cry() {
+        println("$nombre es un llorón")
     }
 
-    companion object
+    override fun toString(): String {
+        return "Alumno(id=$id, nombre='$nombre', edad=$edad)"
+    }
 
 
 }
