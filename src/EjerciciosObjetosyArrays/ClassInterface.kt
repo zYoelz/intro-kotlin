@@ -1,6 +1,4 @@
-package entities
-
-import entities.Alumno
+package EjerciciosObjetosyArrays
 
 interface ClassInterface {
     fun numeroDeAlumnos ()

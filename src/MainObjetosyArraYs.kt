@@ -1,5 +1,5 @@
-import entities.Alumno
-import entities.Clase
+import EjerciciosObjetosyArrays.Alumno
+import EjerciciosObjetosyArrays.Clase
 
 
 
