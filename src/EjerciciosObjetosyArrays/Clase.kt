@@ -3,7 +3,6 @@ package EjerciciosObjetosyArrays
 import java.io.File
 
 class Clase(
-    /** Atributos**/
     val id: Int,
     val name: String,
     var alumnos: ArrayList<Alumno>
@@ -28,7 +27,7 @@ class Clase(
         var numerodeclases: Int = 0
         fun añadirAlumnos(alumnosPorClaseMax: Int, alumnos: ArrayList<Alumno>): ArrayList<Alumno> {
 
-            val localizacionListaAlumnos = "src/entities/Lista de alumnos"
+            val localizacionListaAlumnos = "src/EjerciciosObjetosyArrays/Lista de alumnos"
             val listadeAlumnos = File(localizacionListaAlumnos)
             val alumnosTotales = listadeAlumnos.readLines().size
             val alumnosarray = listadeAlumnos.readLines()
@@ -49,7 +48,7 @@ class Clase(
             for (i in a.toInt()..b.toInt()) {
                 val j = i
                 val alumno = alumnado[j].split(" ").filter { it.isNotEmpty() }.toMutableList()
-                alumnos.add(Alumno(j + 1, alumno[0], alumno[1].toInt()))
+                alumnos.add(Alumno(j + 1, alumno[0], alumno[1].toInt() ,alumno[2].toBoolean(),alumno[3].toBoolean()))
             }
             var numAlumnosNoAsignados = alumnosTotales - (b + 1).toInt()
 
@@ -72,18 +71,3 @@ class Clase(
     }
 }
 
-class Alumno(
-    val id: Int,
-    val nombre: String,
-    var edad: Int
-) : AlumnoInterface {
-    override fun cry() {
-        println("$nombre es un llorón")
-    }
-
-    override fun toString(): String {
-        return "Alumno(id=$id, nombre='$nombre', edad=$edad)"
-    }
-
-
-}
