@@ -27,7 +27,16 @@ fun main() {
 
     var alumnosAConA = alumnosA.filter { it.nombre.contains("a") }
     var alumnosBConA = alumnosB.filter { it.nombre.contains("a") }
-    println("De la clase A \n${alumnosBConA} \nDe la clase B\n${alumnosBConA}")
+    println("Alumnos con la A De la clase A \n ${alumnosAConA} \n Alumnos con la A De la clase A\n ${alumnosBConA}")
 
+    var alumnosSuspensosYNoProgresan =
+        alumnosA.filter { it.isApproved == false && it.isProgressing == false } + alumnosB.filter { it.isApproved == false && it.isProgressing == false }
+    println("*** ----------   Alumnos problematicos  ------------- ***\n $alumnosSuspensosYNoProgresan")
+
+    var alumnosNecesitanAyuda = alumnosA.filter { it.needHelp == true } + alumnosB.filter { it.needHelp == true }
+    println("*** ----------   Alumnos que necesitan AYUDAAAAAAA  ------------- ***\n $alumnosNecesitanAyuda")
+
+    var alumnosSuspensos = alumnosA.filter { it.isApproved == false } + alumnosB.filter { it.isApproved == false }
+    println("*** ----------   Alumnos Suspensos  ------------- ***\n $alumnosSuspensos")
 
 }

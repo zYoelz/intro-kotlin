@@ -48,7 +48,17 @@ class Clase(
             for (i in a.toInt()..b.toInt()) {
                 val j = i
                 val alumno = alumnado[j].split(" ").filter { it.isNotEmpty() }.toMutableList()
-                alumnos.add(Alumno(j + 1, alumno[0], alumno[1].toInt() ,alumno[2].toBoolean(),alumno[3].toBoolean()))
+                alumnos.add(
+                    Alumno(
+                        j + 1,
+                        alumno[0],
+                        alumno[1].toInt(),
+                        alumno[2].toInt(),
+                        Alumno.isAproved(alumno[2].toInt()),
+                        alumno[3].toBoolean(),
+                        Alumno.isNeedHelp(Alumno.isAproved(alumno[2].toInt()), alumno[3].toBoolean())
+                    )
+                )
             }
             var numAlumnosNoAsignados = alumnosTotales - (b + 1).toInt()
 
