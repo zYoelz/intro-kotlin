@@ -4,7 +4,12 @@ import EjerciciosObjetos.Personaje
 fun main() {
 
     println(
-        "En los ejercicios de Objetos tenemos varios grupos de ejercicios relacionados\n" + "En los primeros 2 hablamos de coches eligelos con un 1\n" + "Los siguientes son de personajes e iteraciones con ellos eligelos con un 2\n" + "El ejercicio 5 eligelo con un 5\n" + "Ejercicio 6 con un 6\n" + "Ejercicio 7 con un 7"
+        "En los ejercicios de Objetos tenemos varios grupos de ejercicios relacionados\n" +
+                "En los primeros 2 hablamos de coches eligelos con un 1\n" +
+                "Los siguientes son de personajes e iteraciones con ellos eligelos con un 2\n" +
+                "El ejercicio 5 eligelo con un 5\n" +
+                "Ejercicio 6 con un 6\n" +
+                "Ejercicio 7 con un 7"
     )
 
     var eleccionmenu = readlnOrNull()?.toIntOrNull() ?: 0
@@ -52,18 +57,28 @@ fun main() {
             // Raza Elfo VidaMax 50 Defensa 100 Ataque 150
             // raza Enano VidaMax 100 Defensa 150 Ataque 50
             // Pediremos al usuario un Nick o Nombre y la raza
-            val personaje=Personaje(nombre=String(),raza=String())
-            val personajeA:Personaje=personaje.crearPersonaje()
+            val personaje = Personaje(nombre = String(), raza = String())
+            val personajeA: Personaje = personaje.crearPersonaje()
             println(personajeA)
             println("Crea otro personaje")
-            val personajeB:Personaje=personaje.crearPersonaje()
+            val personajeB: Personaje = personaje.crearPersonaje()
             println(personajeB)
 
             println("${personajeA.nombre} ataca a ${personajeB.nombre}")
-            var vida=personaje.AtaqueAvsDefensaBgetVidaB(personajeA,personajeB)
-            println("El personaje ${personajeB.nombre} pierde ${personajeB.vidaMax-vida} y se queda con $vida de vida")
+            var vida = personaje.AtaqueAvsDefensaBgetVidaB(personajeA, personajeB)
+            println("El personaje ${personajeB.nombre} pierde ${personajeB.vidaMax - vida} y se queda con $vida de vida")
         }
 
+        5 -> {
+
+        }
+
+        6 -> {
+
+        }
+        7 -> {
+
+        }
         else -> println("Eleccion no valida")
     }
 }
