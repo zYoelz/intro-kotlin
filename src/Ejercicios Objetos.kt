@@ -70,7 +70,7 @@ fun main() {
         }
 
         5 -> {
-
+            println("en este ejercicio se hacen varias clases heredadas")
         }
 
         6 -> {
